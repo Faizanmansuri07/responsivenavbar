@@ -68,11 +68,11 @@
         display:none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         width: 100%;
         background-color: #333;
-        padding: 10px 0px;
+        padding: 5px 0px;
       }
       .nav-items {
         
@@ -80,16 +80,20 @@
         align-items: center;
     }
     .nav-items li{
-      margin: 10px;
+      margin: 12px;
       margin-top: 20px;
+      
     }
     .nav-search{
        position: relative;
-       left:50%;
+       left:40%;
        top:30%;
        transform: translate(-50%,-50%);
     }
-    
+    .nav-search button{
+      width: 30%;
+      font-size: 13px;
+    }
       }
       .nav-items a:hover{
        color:rgb(212, 96, 96);
@@ -97,18 +101,27 @@
     .nav-search button:hover{
        background-color: #6c6666;
     }
+    .navlo p{
+        font-size: 26px;
+        color:white;
+
+
+    }
+   
 </style>
 <body>
            <div class="navbar">
-                <div class="nav-items">
-                         <ul>
+                <div class="navlo">
+                    <p>Portfolio.</p>
+                </div>
+                         <ul class="nav-items">
                                  <li><a href="">Home</a></li>
                                  <li><a href="">About</a></li>
                                  <li><a href="">Service</a></li>
                                  <li><a href="">Contact</a></li>    
                         </ul>
                      
-                </div>
+               
                 <div class="nav-search">
                   <input type="text" placeholder="Search here">
                   <button>Search</button>
