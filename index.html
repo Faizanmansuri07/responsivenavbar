@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+     *{
+      padding:0;
+      margin: 0;
+      font-family: sans-serif;
+     }
+     .navbar{
+      height: 70px;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     }
+   
+     .nav-items li{
+      list-style: none;
+      display: inline;
+      margin-left: 40px;
+
+     }
+     .nav-items a{
+       text-decoration: none;
+       color:white;  
+       font-size: 1.1rem;
+     }
+    .nav-search ,input ,button{
+      outline: none;
+      border: none;
+    }
+    .nav-search button{
+      height: 100%;
+      width:20%;
+      background-color: #ccc;
+      font-weight: 700;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    .nav-search input{
+      height: 30px;
+    width: 100%;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    padding-left: 10px;
+    font-weight: 700;
+  }
+      .nav-search{
+        
+        margin-right: 100px;
+        height: 30px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    .nav-search input::placeholder{
+      font-weight: 700;
+    }
+    @media(max-width:666px)
+    {
+      .nav-items{
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0px;
+      }
+      .nav-items {
+        
+        display: flex; 
+        align-items: center;
+    }
+    .nav-items li{
+      margin: 10px;
+      margin-top: 20px;
+    }
+    .nav-search{
+       position: relative;
+       left:50%;
+       top:30%;
+       transform: translate(-50%,-50%);
+    }
+    
+      }
+      .nav-items a:hover{
+       color:rgb(212, 96, 96);
+    }
+    .nav-search button:hover{
+       background-color: #6c6666;
+    }
+</style>
+<body>
+           <div class="navbar">
+                <div class="nav-items">
+                         <ul>
+                                 <li><a href="">Home</a></li>
+                                 <li><a href="">About</a></li>
+                                 <li><a href="">Service</a></li>
+                                 <li><a href="">Contact</a></li>    
+                        </ul>
+                     
+                </div>
+                <div class="nav-search">
+                  <input type="text" placeholder="Search here">
+                  <button>Search</button>
+                </div>
+               
+           </div>
+</body>
+</html>
